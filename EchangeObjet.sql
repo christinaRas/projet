@@ -30,8 +30,7 @@ create table Objet
 )engine=innodb;
 
 
-insert into User values (1,"admin@gmail.com","admin","admin",1);
-insert into User values (2,"Rudy@gmail.com","rudy","Rudy",0);
+insert into User values (1,"admin@gmail.com","admin","admin",0);
 
 insert into Objet values (1,1,"Scoobi-doo",2500);
 insert into Objet values (2,2,"gant",1000);
