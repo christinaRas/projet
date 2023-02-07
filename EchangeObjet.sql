@@ -109,3 +109,7 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 -- INNER JOIN staff AS m ON s.manager_staff_id = m.staff_id
 -- GROUP BY s.store_id
 -- ORDER BY cy.country, c.city;
+
+--liste produit
+select * from Objet where idUser !=1;
+--

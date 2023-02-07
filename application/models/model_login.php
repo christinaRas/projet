@@ -40,7 +40,7 @@
         public function liste_produit ()
         {
             $id = $this->session->userdata('id');
-            $sql = "select * from produit";
+            $sql = "select * from Objet where idUser !='".$id."'";
             $query = $this->db->query($sql);
             foreach($query->result_array() as $produit){}
         }
