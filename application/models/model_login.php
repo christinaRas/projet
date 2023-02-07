@@ -31,6 +31,7 @@
             {
                 if($mail == $row['email']  && $pass == $row['mdp'])
                 {
+                    
                     $valiny = true;
                     $this->load->library('session');
                     $this->session->set_userdata('id', $row['idUser']);
@@ -50,7 +51,10 @@
             $id = $this->session->userdata('id');
             $sql = "select * from Objet where idUser !='".$id."'";
             $query = $this->db->query($sql);
-            foreach($query->result_array() as $produit){}
+            foreach($query->result_array() as $produit)
+            {
+
+            }
         }
     }
 ?>

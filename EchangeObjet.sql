@@ -33,7 +33,7 @@ create table Objet
 insert into User values (1,"admin@gmail.com","admin","admin",1);
 insert into User values (2,"Rudy@gmail.com","rudy","Rudy",0);
 
-insert into Objet values (1,1,"Scoobi-doo",2500,);
+insert into Objet values (1,1,"Scoobi-doo",2500);
 insert into Objet values (2,2,"gant",1000);
 insert into Objet values (3,2,"ecouteurs",5000);
 insert into Objet values (4,2,"pot",8000);
