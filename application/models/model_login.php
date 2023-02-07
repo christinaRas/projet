@@ -32,13 +32,15 @@
                 if($mail == $row['email']  && $pass == $row['mdp'])
                 {
                     $valiny = true;
+                    $this->load->library('session');
+                    $this->session->set_userdata('id', $row['idUser']);
                 }
             }
             return $valiny;
         }
         public function inscri($email,$mdp,$nom)
         {
-            $sql="insert into User values(null,'".$email."','".$mdp."','".$nom."',1)";
+            $sql="insert into User values(null,'".$email."','".$mdp."','".$nom."',5)";
             $query=$this->db->query($sql);
         }
         public function liste_produit ()
