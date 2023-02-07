@@ -9,10 +9,10 @@ use objet;
 create table User 
 (
     idUser integer(30) primary key AUTO_INCREMENT,
-    email varchar(100) unique not null,
-    mdp varchar(100) unique not null,
-    nom varchar(100) unique not null,
-    identification integer unique not null
+    email varchar(100)  not null,
+    mdp varchar(100)  not null,
+    nom varchar(100)  not null,
+    identification integer not null
 )engine=innodb;
 
 
@@ -23,8 +23,8 @@ create table Objet
 (
     idObjet integer(30) primary key AUTO_INCREMENT,
     idUser integer(30),
-    nomObjet varchar(100)unique not null,
-    prix smallint(250)unique not null,
+    nomObjet varchar(100) not null,
+    prix smallint(250) not null,
     Photos varchar(100),
     foreign key (idUser) references User(idUser)
 )engine=innodb;
@@ -32,9 +32,6 @@ create table Objet
 
 insert into User values (1,"admin@gmail.com","admin","admin",1);
 insert into User values (2,"Rudy@gmail.com","rudy","Rudy",0);
-insert into User values (3,"Mendrika@gmail.com","mendrika","Mendrika",2);
-insert into User values (4,"Kristy@gmail.com","christ","ChristyJesoa",3);
-insert into User values (5,"Rody@gmail.com","rody","Rody",4);
 
 insert into Objet values (1,1,"Scoobi-doo",2500);
 insert into Objet values (2,2,"gant",1000);
