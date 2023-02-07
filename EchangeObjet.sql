@@ -25,15 +25,8 @@ create table Objet
     idUser integer(30),
     nomObjet varchar(100)unique not null,
     prix smallint(250)unique not null,
+    Photos varchar(100),
     foreign key (idUser) references User(idUser)
-)engine=innodb;
-
-create table photos 
-(
-    idPhotos integer(30) primary key AUTO_INCREMENT,
-    idObjet integer(30),
-    photos varchar(50),
-    foreign key (idObjet) references Objet(idObjet)
 )engine=innodb;
 
 
@@ -55,17 +48,6 @@ insert into Objet values (9,4,"chaussette",5500);
 insert into Objet values (10,4,"sac",1000);
 insert into Objet values (11,5,"nike",7000);
 insert into Objet values (12,5,"montre",4000);
-
--- insert into Photos values (1,2,"gant");
--- insert into Photos values (2,3,"casque");
--- insert into Photos values (3,4,"chaussette");
--- insert into Photos values (4,4,"soutien");
--- insert into Photos values (5,4,"sac");
--- insert into Photos values (6,3,"pot");
--- insert into Photos values (7,3,"short");
--- insert into Photos values (8,2,"ecouteurs");
--- insert into Photos values (9,2,"tshirt");
--- insert into Photos values (10,1,"Scoobi-doo");
 
 
 create view photosObjet as
