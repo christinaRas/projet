@@ -32,9 +32,17 @@
                 if($mail == $row['email']  && $pass == $row['mdp'])
                 {
                     $valiny = true;
+                    $this->session->setId('id', $row['idUser']);
                 }
             }
             return $valiny;
+        }
+        public function liste_produit ()
+        {
+            $id = $this->session->userdata('id');
+            $sql = "select * from produit";
+            $query = $this->db->query($sql);
+            foreach($query->result_array() as $produit){}
         }
     }
 ?>
