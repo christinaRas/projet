@@ -12,12 +12,14 @@ create table User
     email varchar(100)  not null,
     mdp varchar(100)  not null,
     nom varchar(100)  not null,
-    identification integer not null
+    identification integer not null,
+    photo varchar(100)
 )engine=innodb;
 
+insert into user values (null,'admin@a.admin','admin','admin',0,'assets/img/admin.jpg')
 
-create or replace view membre as(select * from User where identification = 0);
-create or replace view adminn as(select * from User where identification = 1);
+create or replace view membre as(select * from User where identification = 1);
+create or replace view adminn as(select * from User where identification = 0);
 
 create table Objet 
 (
@@ -26,6 +28,7 @@ create table Objet
     nomObjet varchar(100) not null,
     prix smallint(250) not null,
     Photos varchar(100),
+    categorie varchar(20),
     foreign key (idUser) references User(idUser)
 )engine=innodb;
 
@@ -34,18 +37,6 @@ insert into User values (1,"admin@gmail.com","admin","admin",1);
 insert into User values (2,"Rudy@gmail.com","rudy","Rudy",0);
 
 insert into Objet values (1,1,"Scoobi-doo",2500);
-insert into Objet values (2,2,"gant",1000);
-insert into Objet values (3,2,"ecouteurs",5000);
-insert into Objet values (4,2,"pot",8000);
--- insert into Objet values (5,3,"casque",3000);
--- insert into Objet values (6,3,"short",6000);
--- insert into Objet values (7,2,"tshirt",9000);
--- insert into Objet values (8,4,"soutien",3000);
--- insert into Objet values (9,4,"chaussette",5500);
--- insert into Objet values (10,4,"sac",1000);
--- insert into Objet values (11,5,"nike",7000);
--- insert into Objet values (12,5,"montre",4000);
-
 
 create view photosObjet as
 (
