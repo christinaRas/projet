@@ -65,7 +65,7 @@
             $id = $this->session->userdata('id');
             $sql = "select * from Objet where idUser ='".$id."'";
             $query = $this->db->query($sql);
-            foreach($query->result_array() as $produit)
+            foreach($query->result_array() as $me)
             {
 
             }
