@@ -26,15 +26,16 @@ create table Objet
     idObjet integer(30) primary key AUTO_INCREMENT,
     idUser integer(30),
     nomObjet varchar(100) not null,
+    descri varchar(100),
     prix smallint(250) not null,
     Photos varchar(100),
     categorie varchar(20),
     foreign key (idUser) references User(idUser)
 )engine=innodb;
 
-
-insert into User values (1,"admin@gmail.com","admin","admin",1);
-insert into User values (2,"Rudy@gmail.com","rudy","Rudy",0);
+insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','30000','assets/img/c2.jpg','chaussure');
+insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg','chaussure');
+insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
 
 insert into Objet values (1,1,"Scoobi-doo",2500);
 

@@ -146,7 +146,7 @@ https://templatemo.com/tm-559-zay-shop
     <section class="container py-5">
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1">Our Products</h1>
+                <h1 class="h1">My Products</h1>
                 
             </div>
         </div>
