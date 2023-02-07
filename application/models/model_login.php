@@ -38,7 +38,7 @@
         }
         public function inscri($email,$mdp,$nom)
         {
-            $sql="insert into User values(null,'".$email."','".$mdp."','".$nom."',5)";
+            $sql="insert into User values(null,'".$email."','".$mdp."','".$nom."',1)";
             $query=$this->db->query($sql);
         }
         public function liste_produit ()
