@@ -135,7 +135,7 @@ https://templatemo.com/tm-559-zay-shop
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/about-hero.svg" alt="About Hero">
+                    <img src="<?php echo base_url(); ?> assets/img/about" alt="About Hero">
                 </div>
             </div>
         </div>
