@@ -36,5 +36,10 @@
             }
             return $valiny;
         }
+        public function inscri($email,$mdp,$nom)
+        {
+            $sql="insert into User values(null,'".$email."','".$mdp."','".$nom."',5)";
+            $query=$this->db->query($sql);
+        }
     }
 ?>

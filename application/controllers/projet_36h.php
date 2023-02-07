@@ -42,5 +42,15 @@ class projet_36h extends CI_Controller {
 			$this->load->view('login');
 		}
 	}
+	public function inscri()
+	{
+		$email=$this->input->post("email");
+		$mdp=$this->input->post("password");
+		$nom=$this->input->post("nom");
+		
+			$this->load->model('model_login');
+			$this->model_login->inscri($email,$mdp,$nom);
+			$this->load->view('login');
+	}
    
 }
