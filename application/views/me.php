@@ -135,7 +135,7 @@ https://templatemo.com/tm-559-zay-shop
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="<?php echo base_url(); ?><?php echo $this->session->userdata('pdp') ;?>" alt="About Hero">
+                    <img src="<?php echo base_url(); ?><?php echo $this->session->userdata('pdp') ;?>" width="200px" alt="About Hero">
                 </div>
             </div>
         </div>

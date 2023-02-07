@@ -283,7 +283,7 @@ footer a {
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="projet_36h/log" method = 'post'>
+		<form action="log" method = 'post'>
 			<h1>Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
