@@ -1,3 +1,8 @@
+<?php
+$this->load->helper('url');
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +14,13 @@
     <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/templatemo.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/templatemo.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/fontawesome.min.css">
 <!--
     
 TemplateMo 559 Zay Shop
@@ -65,9 +70,6 @@ https://templatemo.com/tm-559-zay-shop
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="shop.html">Shop</a>
@@ -387,11 +389,11 @@ https://templatemo.com/tm-559-zay-shop
     <!-- End Footer -->
 
     <!-- Start Script -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery-1.11.0.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/templatemo.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/custom.js"></script>
     <!-- End Script -->
 </body>
 
