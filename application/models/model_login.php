@@ -34,6 +34,8 @@
                     $valiny = true;
                     $this->load->library('session');
                     $this->session->set_userdata('id', $row['idUser']);
+                    $this->session->set_userdata('admin', $row['identification']);
+
                 }
             }
             return $valiny;
