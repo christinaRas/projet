@@ -37,9 +37,9 @@ class projet_36h extends CI_Controller {
 		if($this->model_login->checkLogin($mail,$pass))
 		{
 			$this->session->set_userdata('email', $mail);
-			echo 'mety';
+			$this->load->view('profil');
 		}else{
-			echo 'non tsy mety';
+			$this->load->view('login');
 		}
 	}
    
