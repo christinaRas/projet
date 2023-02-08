@@ -67,7 +67,6 @@
             {
                 $sql = "insert into objet values(null,'".$id."',)";
 
-                
             }
     }
 ?>
