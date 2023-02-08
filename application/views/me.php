@@ -151,13 +151,18 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
         <div class="row">
-
-            <div class="col-md-6 col-lg-3 pb-5">
+         <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
-                    <h2 class="h5 mt-4 text-center">Delivery Services</h2>
+                  
+        <?php foreach ($liste_produit as $produit) { ?>       
+                    <h2 class="h5 mt-4 text-center"><?php echo $produit['descri']; ?></h2>
+                    
+        <?php     }  ?>
                 </div>
             </div>
+     
+           
 
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">

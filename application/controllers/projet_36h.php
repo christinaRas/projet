@@ -55,7 +55,12 @@ class projet_36h extends CI_Controller {
 	public function me()
 	{
 		$this->load->view('me');
-
+	}
+	public function my_objet()
+	{
+		$data = array();
+		$data['liste_produit'] = $this->model_login->liste_produit();
+		$this->load->view('me',$data);
 	}
    
 }
