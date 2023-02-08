@@ -75,6 +75,12 @@
             $stat  = $this->db->query($sql);
             return $stat->result();
         }
+        public function stat_echange()
+        {
+            $sql=" select count(user)as n from nombre;";
+            $stat  = $this->db->query($sql);
+            return $stat->result();
+        }
          
     }
 ?>

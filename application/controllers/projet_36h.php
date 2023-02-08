@@ -84,6 +84,7 @@ class projet_36h extends CI_Controller {
 		$id = $this->session->userdata('id');
 		$this->load->model('model_login');
 		$data['count'] = $this->model_login->stat_user();
+		$data['echange'] =$this->model_login->stat_echange();
 		$this->load->view('statistique',$data);
 	}
 	public function recherche()

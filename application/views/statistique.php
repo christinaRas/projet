@@ -6,7 +6,10 @@ foreach($count as $v)
 {
     $nombre =  $v->user;
 }
-    
+foreach($echange as $e)
+{
+    $count = $e->n;
+}    
 
 ?>
 <!DOCTYPE html>
@@ -103,9 +106,10 @@ foreach($count as $v)
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-white">
+                    <h1>PAGE ADMIN</h1>
                     <h1>Nombre utilisateur : <?php echo $nombre ;?></h1>
                     <p>
-                        Bienvenue sur le compte admin (mba omeo bonus)
+                        Nombre des echange effectuer : <?php echo $count ;?>
                     </p>
                 </div>
                 <div class="col-md-4">

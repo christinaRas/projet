@@ -196,25 +196,7 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="container">
-                    <div class="row p-5">
-                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="">
-                        </div>
-                        <div class="col-lg-6 mb-0 d-flex align-items-center">
-                            <div class="text-align-left">
-                                <h1 class="h1">Repr in voluptate</h1>
-                                <h3 class="h2">Ullamco laboris nisi ut </h3>
-                                <p>
-                                    We bring you 100% free CSS templates for your websites. 
-                                    If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
             <i class="fas fa-chevron-left"></i>
@@ -239,13 +221,15 @@ https://templatemo.com/tm-559-zay-shop
                     </p>
                 </div>
             </div>
+            <form action="" method="post">
             <div class="row">
+                
             <?php foreach($valiny as $v): ?>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
-                        <a href="shop-single.html">
-                            <img src="<?php echo base_url(); ?><?php echo $v->Photos ;?>" class="card-img-top" alt="...">
-                        </a>
+                        
+                            <img src="<?php echo base_url(); ?><?php echo $v->Photos ;?>" class="card-img-top" alt="..." >
+                        
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
                                 <li>
@@ -255,9 +239,9 @@ https://templatemo.com/tm-559-zay-shop
                                     <i class="text-muted fa fa-star"></i>
                                     <i class="text-muted fa fa-star"></i>
                                 </li>
-                                <li class="text-muted text-right">$240.00</li>
+                                <button class="btn btn-warning-sm">DEMANDER</button>
                             </ul>
-                            <a href="shop-single.html" class="h2 text-decoration-none text-dark"><?php echo $v->nomObjet; ?></a>
+                            <p  class="h2 text-decoration-none text-dark"><?php echo $v->nomObjet; ?></p>
                             <p class="card-text">
                             <?php echo $v->descri; ?>
                             </p>
@@ -266,7 +250,8 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                 </div>
                     <?php endforeach; ?>
-            </div>
+                                </div>
+                                </form>
     </section>
     <!-- End Featured Product -->
 

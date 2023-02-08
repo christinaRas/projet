@@ -143,7 +143,7 @@ join user on echange.idUser_echange = user.idUser
 join objet on echange.idObjet = objet.idObjet 
 join etat on echange.idEtat = etat.idEtat where etat.idEtat =2;
 
-select count(user) from nombre;
+select count(user)as n from nombre;
 --acceptation
 --echange process
 update echange set idEtat = 2
