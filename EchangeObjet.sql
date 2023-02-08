@@ -43,7 +43,7 @@ create table Objet
     descri varchar(100),
     prix integer not null,
     Photos varchar(100),
-    categorie varchar(100) ,
+    categorie varchar(100) not null ,
     foreign key (idUser) references User(idUser)
 
 )engine=innodb;
@@ -54,9 +54,8 @@ SET @gant     = (SELECT nomC FROM categorie WHERE idC = 2);
 SET @Technologie     = (SELECT nomC FROM categorie WHERE idC = 3);
 
 insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','30000','assets/img/c2.jpg',(SELECT nomC FROM categorie WHERE idC = 1));
-
-insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg','chaussure');
-insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
+insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg',(SELECT nomC FROM categorie WHERE idC = 1));
+insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg',(SELECT nomC FROM categorie WHERE idC = 1));
 
 insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
 insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
