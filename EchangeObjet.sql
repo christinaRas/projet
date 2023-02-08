@@ -57,9 +57,9 @@ insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','3000
 insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg',(SELECT nomC FROM categorie WHERE idC = 1));
 insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg',(SELECT nomC FROM categorie WHERE idC = 1));
 
-insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
-insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
-insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
+insert into objet values(null,2,'Gant','Bien chaud et confortable','10000','assets/img/g1.jpg',(SELECT nomC FROM categorie WHERE idC = 2));
+insert into objet values(null,3,'Casque','Casque a la mode avec une bonne son','100000','assets/img/t2.jpg',(SELECT nomC FROM categorie WHERE idC = 3));
+insert into objet values(null,4,'Ordinateur','Tres pratique pour le travail','2000000','assets/img/t3.jpg',(SELECT nomC FROM categorie WHERE idC = 3));
 
 
 create view photosObjet as
