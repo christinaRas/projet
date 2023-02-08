@@ -130,12 +130,13 @@ insert into echange values (null,2,4,5,1);
 
 
 
-select user.nom,etat.nom from echange 
+create or replace view demd select user.nom,etat.nom,objet.idObjet,echange.idObjet_echange from echange 
 join user on echange.idUser_echange = user.idUser  
 join objet on echange.idObjet = objet.idObjet 
-join etat on echange.idEtat = etat.idEtat
-;
+join etat on echange.idEtat = etat.idEtat where etat.idEtat =1;
+
 --
 
+--count
 
 
