@@ -49,9 +49,10 @@
             $sql="insert into User values(null,'".$email."','".$mdp."','".$nom."',5)";
             $query=$this->db->query($sql);
         }
-        public function liste_produit()
+
+        public function liste_produit ()
         {
-            $sql = "select * from Objet where idUser ='".$id."'";
+            $sql = "select * from Objet where idUser !='".$id."'";
             $query = $this->db->query($sql);
             $result = array();
 
@@ -60,6 +61,16 @@
                 $result[] = $row;
             }
             return $result;
+        }
+        public function my_product()
+        {
+            $id = $this->session->userdata('id');
+            $sql = "select * from Objet where idUser ='".$id."'";
+            $query = $this->db->query($sql);
+            foreach($query->result_array() as $me)
+           {
+                
+           }
         }
     }
 ?>
