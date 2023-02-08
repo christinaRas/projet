@@ -107,3 +107,9 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 --liste produit
 select * from Objet where idUser !=1;
 --
+create table echange
+(
+    idEchange integer primary key AUTO_INCREMENT,
+    idUser_echange integer,
+    idObjet integer 
+);
