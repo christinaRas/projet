@@ -121,13 +121,20 @@ create table echange
     idUser_echange integer,
     idObjet integer ,
     idObjet_echange integer,
-    etat varchar(100),
+    idEtat integer ,
     foreign key (idUser_echange) references User(idUser),
+        foreign key (idEtat) references etat(idEtat),
     foreign key (idObjet_echange) references objet(idObjet)
-
-
 );
+insert into echange values (null,2,4,5,1);
 
+
+
+select user.nom,etat.nom from echange 
+join user on echange.idUser_echange = user.idUser  
+join objet on echange.idObjet = objet.idObjet 
+join etat on echange.idEtat = etat.idEtat
+;
 --
 
 
