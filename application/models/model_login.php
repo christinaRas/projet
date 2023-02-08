@@ -63,7 +63,9 @@
             $produit  = $this->db->query($sql);
             return $produit->result();
         }
-
-    
+        public function publication()
+            {
+                
+            }
     }
 ?>

@@ -71,7 +71,7 @@ $this->load->helper('url');
     </nav>
 
     <div class="form-container sign-up-container">
-		<form action="inscri" method='post'>
+		<form action="publication" method='post'>
 			<h1>Publication</h1>
 			<input type="text" name="nom" placeholder="Nom de l'objet" class="form-control-sm"/>
             <input type="text" name="description" placeholder="Description " class="form-control-sm" />
