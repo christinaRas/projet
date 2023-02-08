@@ -1,6 +1,6 @@
 <?php 
     if(! defined('BASEPATH')) exit('No direct script acces allowed');
-
+    debug_backtrace();
     class model_login extends CI_Model 
     {
         // public function find()
@@ -50,27 +50,25 @@
             $query=$this->db->query($sql);
         }
 
-        public function liste_produit ()
-        {
-            $sql = "select * from Objet where idUser !='".$id."'";
-            $query = $this->db->query($sql);
-            $result = array();
+        // public function liste_produit ()
+        // {
+        //     $id = 1;
+        //     $sql = "select * from Objet where idUser !='".$id."'";
+        //     $query = $this->db->query($sql);
+        //     $result = array();
 
-            foreach($query->result_array() as $row)
-            {
-                $result[] = $row;
-            }
-            return $result;
-        }
-        public function my_product()
+        //     foreach($query->result_array() as $row)
+        //     {
+        //         $result[] = $row;
+        //     }
+        //     return $result;
+        // }
+
+        public function my_product($id)
         {
-            $id = $this->session->userdata('id');
             $sql = "select * from Objet where idUser ='".$id."'";
             $query = $this->db->query($sql);
-            foreach($query->result_array() as $me)
-           {
-                
-           }
+            return $query->result();
         }
     }
 ?>

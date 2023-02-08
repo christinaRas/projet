@@ -27,7 +27,7 @@ create table Objet
     idUser integer(30),
     nomObjet varchar(100) not null,
     descri varchar(100),
-    prix smallint(250) not null,
+    prix integer not null,
     Photos varchar(100),
     categorie varchar(20),
     foreign key (idUser) references User(idUser)
@@ -37,7 +37,6 @@ insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','3000
 insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg','chaussure');
 insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
 
-insert into Objet values (1,1,"Scoobi-doo",2500);
 
 create view photosObjet as
 (

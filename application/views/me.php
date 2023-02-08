@@ -1,7 +1,6 @@
 <?php
 $this->load->helper('url');
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -151,17 +150,18 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
         <div class="row">
+            <?php foreach($res as $result): ?>
          <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
                   
-        <?php foreach ($liste_produit) { ?>       
-                    <h2 class="h5 mt-4 text-center"><?php echo $descri; ?></h2>
+        
+                    <h2 class="h5 mt-4 text-center">mendrika</h2>
                     
-                <?php     }  ?>
+               
                 </div>
             </div>
-     
+                <?php endforeach ?>
            
 
             <div class="col-md-6 col-lg-3 pb-5">
@@ -176,14 +176,12 @@ https://templatemo.com/tm-559-zay-shop
                     <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
                     <h2 class="h5 mt-4 text-center">Promotion</h2>
                 </div>
-        <?php  foreach($data as $row) { ?>
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
                     <h2 class="h5 mt-4 text-center"><?php echo $nom ?></h2>
                 </div>
             </div>
-               <?php  }  ?>
             
             </div>
 
