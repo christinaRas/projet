@@ -78,7 +78,10 @@ class projet_36h extends CI_Controller {
 		$descri = $this->input->post("description");
 		$prix = $this->input->post("prix");
 		$image = $this->input->post("iamage");
+	}
+	public function recherche()
+	{
+		$this->load->view('recherche');
 
-		
 	}
 }
