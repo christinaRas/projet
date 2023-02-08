@@ -150,7 +150,8 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
         <div class="row">
-            <?php foreach($res as $result): ?>
+
+    <?php foreach($resulat as $result): ?>
          <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
@@ -161,7 +162,7 @@ https://templatemo.com/tm-559-zay-shop
                
                 </div>
             </div>
-                <?php endforeach ?>
+                
            
 
             <div class="col-md-6 col-lg-3 pb-5">
@@ -179,12 +180,12 @@ https://templatemo.com/tm-559-zay-shop
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
-                    <h2 class="h5 mt-4 text-center"><?php echo $nom ?></h2>
+                    <h2 class="h5 mt-4 text-center">er</h2>
                 </div>
             </div>
             
             </div>
-
+        <?php endforeach; ?>
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>

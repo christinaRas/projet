@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+debug_backtrace();
 class projet_36h extends CI_Controller {
 
 	/**
@@ -20,12 +20,10 @@ class projet_36h extends CI_Controller {
 	 */
 	public function index()
 	{
-		
 		$this->load->view('login');
 	}
 	public function profil()
 	{
-		
 		$this->load->view('profil');
 	}
 	public function log()
@@ -59,7 +57,6 @@ class projet_36h extends CI_Controller {
 	
 	public function my_product()
 	{
-		
 		$id = $this->session->userdata('id');
 		$this->load->model('model_login');
 		$data['resultat'] = $this->model_login->my_product($id);

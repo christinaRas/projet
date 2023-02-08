@@ -67,8 +67,8 @@
         public function my_product($id)
         {
             $sql = "select * from Objet where idUser ='".$id."'";
-            $query = $this->db->query($sql);
-            return $query->result();
+            $produit  = $this->db->query($sql);
+            return $produit->result();
         }
     }
 ?>
