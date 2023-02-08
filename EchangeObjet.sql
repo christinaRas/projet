@@ -107,9 +107,28 @@ SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 --liste produit
 select * from Objet where idUser !=1;
 --
+create table etat
+(
+    idEtat integer primary key AUTO_INCREMENT,
+    nom varchar(100)
+);
+insert into etat values(null,"demande");
+insert into etat values(null,"accepter");
+
 create table echange
 (
     idEchange integer primary key AUTO_INCREMENT,
     idUser_echange integer,
-    idObjet integer 
+    idObjet integer ,
+    idObjet_echange integer,
+    etat varchar(100),
+    foreign key (idUser_echange) references User(idUser),
+    foreign key (idObjet_echange) references objet(idObjet)
+
+
 );
+
+--
+
+
+
