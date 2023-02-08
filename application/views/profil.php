@@ -83,14 +83,14 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="nav-item">
                             <a class="nav-link" href="my_product">Mon profil</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="publication">Publication</a>
-                        </li>
+                        </li> -->
                         <?php
                             if($this->session->userdata("admin")==1)
                             {
                         echo "<li class='nav-item'>
-                        <a class='nav-link' href='admin'>ADMIN</a>
+                        <a class='nav-link' href='count_user'>ADMIN</a>
                             </li>"; 
                             }
                         ?>

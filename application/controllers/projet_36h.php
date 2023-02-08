@@ -85,11 +85,9 @@ class projet_36h extends CI_Controller {
 		$this->load->model('model_login');
 		$data['count'] = $this->model_login->stat_user();
 		$this->load->view('statistique',$data);
-		$image = $this->input->post("iamage");
 	}
 	public function recherche()
 	{
 		$this->load->view('recherche');
-
 	}
 }
