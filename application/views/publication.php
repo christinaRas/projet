@@ -11,6 +11,7 @@ $this->load->helper('url');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publication</title>
+    
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/templatemo.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom.css">
@@ -68,6 +69,21 @@ $this->load->helper('url');
 
         </div>
     </nav>
+
+    <div class="form-container sign-up-container">
+		<form action="inscri" method='post'>
+			<h1>Publication</h1>
+			<input type="text" name="nom" placeholder="Nom de l'objet" class="form-control-sm"/>
+            <input type="text" name="description" placeholder="Description " class="form-control-sm" />
+			<input type="number" name="prix" placeholder="prix" class="form-control-sm"/>
+            <input type="file" name="img" placeholder="photo" class="form-control-sm"/>
+        <br>
+        <br>
+
+			<button class="btn btn-warning">Sign Up</button>
+		</form>
+	</div>
+
 
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
