@@ -49,9 +49,12 @@ create table Objet
 )engine=innodb;
 
 
-   select nomC where idC = 1;
+SET @chaussure = (SELECT nomC FROM categorie WHERE idC = 1);
+SET @gant     = (SELECT nomC FROM categorie WHERE idC = 2);
+SET @Technologie     = (SELECT nomC FROM categorie WHERE idC = 3);
 
-insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','30000','assets/img/c2.jpg',);
+insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','30000','assets/img/c2.jpg',(SELECT nomC FROM categorie WHERE idC = 1));
+
 insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg','chaussure');
 insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
 
