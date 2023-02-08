@@ -59,6 +59,15 @@ class projet_36h extends CI_Controller {
 		$data['resultat'] = $this->model_login->my_product($id);
 		$this->load->view('me',$data);
 	}
+
+	public function autre_product()
+	{
+		$id = $this->session->userdata('id');
+		$this->load->model('model_login');
+		$data['valiny'] = $this->model_login->autre($id);
+		$this->load->view('profil',$data);
+	}
+
 	public function publication ()
 	{
 		$this->load->view("publication");

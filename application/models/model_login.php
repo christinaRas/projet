@@ -50,19 +50,12 @@
             $query=$this->db->query($sql);
         }
 
-        // public function liste_produit ()
-        // {
-        //     $id = 1;
-        //     $sql = "select * from Objet where idUser !='".$id."'";
-        //     $query = $this->db->query($sql);
-        //     $result = array();
-
-        //     foreach($query->result_array() as $row)
-        //     {
-        //         $result[] = $row;
-        //     }
-        //     return $result;
-        // }
+        public function autre($id)
+        {
+            $sql = "select * from Objet where idUser !='".$id."'";
+            $produitautre  = $this->db->query($sql);
+            return $produitautre->result();
+        }
 
         public function my_product($id)
         {
@@ -70,5 +63,7 @@
             $produit  = $this->db->query($sql);
             return $produit->result();
         }
+
+    
     }
 ?>

@@ -16,7 +16,11 @@ create table User
     photo varchar(100)
 )engine=innodb;
 
-insert into user values (null,'admin@a.admin','admin','admin',0,'assets/img/admin.jpg')
+insert into user values (null,'admin@a.admin','admin','admin',0,'assets/img/admin.jpg');
+insert into user values (null,'Mendrika@gmail.com','men','men',0,'assets/img/men.jpg');
+insert into user values (null,'christ@gmail.com','c','christ',0,'assets/img/christ.jpg');
+insert into user values (null,'rudy@gmail.com','rudy','rudy',0,'assets/img/rudy.jpg');
+
 
 create or replace view membre as(select * from User where identification = 1);
 create or replace view adminn as(select * from User where identification = 0);
@@ -50,6 +54,11 @@ create table Objet
 insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','30000','assets/img/c2.jpg',);
 insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg','chaussure');
 insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
+
+insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
+insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
+insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
+
 
 create view photosObjet as
 (
