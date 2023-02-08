@@ -35,7 +35,10 @@ class projet_36h extends CI_Controller {
 		if($this->model_login->checkLogin($mail,$pass))
 		{
 			$this->session->set_userdata('email', $mail);
-			$this->load->view('profil');
+			$id = $this->session->userdata('id');
+		$this->load->model('model_login');
+		$data['valiny'] = $this->model_login->autre($id);
+		$this->load->view('profil',$data);
 		}else{
 			$this->load->view('login');
 		}
