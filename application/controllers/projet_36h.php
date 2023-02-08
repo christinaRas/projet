@@ -74,7 +74,11 @@ class projet_36h extends CI_Controller {
 	public function publication ()
 	{
 		$id = $this->session->userdata('id');
-		$nom = $this->
+		$nom = $this->input->post("nom");
+		$descri = $this->input->post("description");
+		$prix = $this->input->post("prix");
+		$image = $this->input->post("iamage");
+
 		
 	}
 }
