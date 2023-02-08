@@ -73,7 +73,8 @@ class projet_36h extends CI_Controller {
 
 	public function publication ()
 	{
-		$this->load->view("publication");
-
+		$id = $this->session->userdata('id');
+		$nom = $this->
+		
 	}
 }
