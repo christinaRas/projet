@@ -129,14 +129,21 @@ create table echange
 insert into echange values (null,2,4,5,1);
 
 
-
-create or replace view demd select user.nom,etat.nom,objet.idObjet,echange.idObjet_echange from echange 
+--demande
+create or replace view dmd as select user.nom as USER,etat.nom,objet.idObjet as ID_OBJET,echange.idObjet_echange as ECHANGE from echange 
 join user on echange.idUser_echange = user.idUser  
 join objet on echange.idObjet = objet.idObjet 
 join etat on echange.idEtat = etat.idEtat where etat.idEtat =1;
 
+
 --
+--stat echange
+create or replace view nombre as select user.nom as USER,etat.nom,objet.idObjet as ID_OBJET,echange.idObjet_echange as ECHANGE from echange 
+join user on echange.idUser_echange = user.idUser  
+join objet on echange.idObjet = objet.idObjet 
+join etat on echange.idEtat = etat.idEtat where etat.idEtat =0;
 
---count
 
-
+--acceptation
+update echange set idEtat = 0
+where idUser_echange = 2;
