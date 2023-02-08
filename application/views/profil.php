@@ -173,7 +173,7 @@ https://templatemo.com/tm-559-zay-shop
                     </p>
                 </div>
             </div>
-            <form action="echan" method="post">
+            <form action="echange" method="post">
             <div class="row">
                 
             <?php foreach($valiny as $v): ?>
