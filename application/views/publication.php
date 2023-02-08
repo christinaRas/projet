@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 debug_backtrace();
 $this->load->helper('url');
-
+$connect = mysqli_connect("localhost","root","root","objet");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,6 +77,10 @@ $this->load->helper('url');
             <input type="text" name="description" placeholder="Description " class="form-control-sm" />
 			<input type="number" name="prix" placeholder="prix" class="form-control-sm"/>
             <input type="file" name="img" placeholder="photo" class="form-control-sm"/>
+            <select name="" id="">
+                <?php    ?>
+                <option value=""></option>
+            </select>
         <br>
         <br>
 

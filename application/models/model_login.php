@@ -74,5 +74,6 @@
             $stat  = $this->db->query($sql);
             return $stat->result();
         }
+         
     }
 ?>
