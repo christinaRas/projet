@@ -117,6 +117,7 @@ $this->load->helper('url');
                                 </li>
                             </ul>
                             <p class="text-center mb-0"><?php echo $v->prix ;?></p>
+                            <a href="my_product2">echanger contre >></a>
                         </div>
                     </div>
                 </div>

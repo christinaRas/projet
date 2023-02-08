@@ -98,6 +98,12 @@ class projet_36h extends CI_Controller {
 		$data['photo'] = $this->model_login->photo($ido);
 		$this->load->view('echange',$data);
 	}
-
+	public function my_product2()
+	{
+		$id = $this->session->userdata('id');
+		$this->load->model('model_login');
+		$data['resultat'] = $this->model_login->my_product($id);
+		$this->load->view('choisi',$data);
+	}
 
 }
