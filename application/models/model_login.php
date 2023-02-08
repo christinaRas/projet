@@ -87,6 +87,11 @@
             $p  = $this->db->query($sql);
             return $p->result();
         }
+        public function e($user_echange,$idObjet,$idObjet_echange)
+        {
+            $sql="insert into echange values(null,'".$user_echange."','".$idObjet."','".$idObjet_echange."',2)";
+            $query=$this->db->query($sql);
+        }
          
     }
 ?>

@@ -83,7 +83,7 @@ $this->load->helper('url');
 
     <?php foreach($photo as $v): ?>
     <div class="p-2 pb-3">
-
+            <form action="autre_product" method="post">
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
                             <img class="card-img rounded-0 img-fluid" src="<?php echo base_url(); ?><?php echo $v->Photos ;?>">
@@ -116,9 +116,10 @@ $this->load->helper('url');
                                     <i class="text-muted fa fa-star"></i>
                                 </li>
                             </ul>
-                            <p class="text-center mb-0"><?php echo $v->prix ;?></p>
-                            <a href="my_product2">echanger contre >></a>
+                            <button class="btn btn-danger" value="<?php echo $v->idObjet ;?>" name="objet">Confirmer</button>
+                            
                         </div>
+                        </form>
                     </div>
                 </div>
     <?php endforeach; ?>

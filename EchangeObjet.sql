@@ -119,7 +119,7 @@ create table echange
 (
     idEchange integer primary key AUTO_INCREMENT,
     idUser_echange integer,
-    idObjet integer ,
+    idObjet integer,
     idObjet_echange integer,
     idEtat integer ,
     foreign key (idUser_echange) references User(idUser),

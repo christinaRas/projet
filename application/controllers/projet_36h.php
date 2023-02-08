@@ -66,8 +66,12 @@ class projet_36h extends CI_Controller {
 	public function autre_product()
 	{
 		$id = $this->session->userdata('id');
+		$objet=$this->input->post("objet");
+
 		$this->load->model('model_login');
 		$data['valiny'] = $this->model_login->autre($id);
+		$data['e'] = $this->model_login->e($id,);
+
 		$this->load->view('profil',$data);
 	}
 
@@ -104,6 +108,17 @@ class projet_36h extends CI_Controller {
 		$this->load->model('model_login');
 		$data['resultat'] = $this->model_login->my_product($id);
 		$this->load->view('choisi',$data);
+	}
+	public function ec()
+	{
+		$id = $this->session->userdata('id');
+		$obj=$this->input->post("idObjet");
+		
+		
+		
+			$this->load->model('model_login');
+			$this->model_login->e($id,$obj,$nom);
+			$this->load->view('profil');
 	}
 
 }

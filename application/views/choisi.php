@@ -141,13 +141,14 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
 
-        <form action="" method="post">
+        <form action="ec" method="post">
         <div class="row">
         <?php foreach($resultat as $R): ?>
 
                 <div class="col-md-4">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
+                                <input type="hidden" name="idObjet" value="<?php echo $R->idObjet ;?>">
                                 <img class="card-img rounded-0 img-fluid ok" src="<?php echo base_url(); ?><?php echo $R->Photos ;?>" >
                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
