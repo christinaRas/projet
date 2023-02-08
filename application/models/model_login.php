@@ -63,11 +63,10 @@
             $produit  = $this->db->query($sql);
             return $produit->result();
         }
-        public function publication($id,$nom,$desc,$prix,$photo,)
+        public function publication($id,$nom,$desc,$prix,$photo,$categorie)
             {
-                $sql = "insert into objet values(null,'".$id."',)";
-
-                
+                $sql = "insert into objet values(null,'".$id."','".$nom."','".$desc."','".$prix."','".$photo."','".$categorie."')";
+                    $this->db->query($sql);
             }
     }
 ?>
