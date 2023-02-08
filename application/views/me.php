@@ -151,7 +151,7 @@ https://templatemo.com/tm-559-zay-shop
         </div>
         <div class="row">
 
-    <?php foreach($resulat as $result): ?>
+    <?php foreach($resultat as $result): ?>
          <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
