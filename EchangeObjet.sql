@@ -141,9 +141,13 @@ join etat on echange.idEtat = etat.idEtat where etat.idEtat =1;
 create or replace view nombre as select user.nom as USER,etat.nom,objet.idObjet as ID_OBJET,echange.idObjet_echange as ECHANGE from echange 
 join user on echange.idUser_echange = user.idUser  
 join objet on echange.idObjet = objet.idObjet 
-join etat on echange.idEtat = etat.idEtat where etat.idEtat =0;
+join etat on echange.idEtat = etat.idEtat where etat.idEtat =2;
 
-
+select count(user) from nombre;
 --acceptation
-update echange set idEtat = 0
+--echange process
+update echange set idEtat = 2
 where idUser_echange = 2;
+
+update objet 
+
