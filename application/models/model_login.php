@@ -38,6 +38,7 @@
                     $this->session->set_userdata('admin', $row['identification']);
                     $this->session->set_userdata('nom', $row['nom']);
                     $this->session->set_userdata('pdp', $row['photo']);
+                    $this->session->set_userdata('admin', $row['identification']);
 
 
                 }

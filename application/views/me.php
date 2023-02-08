@@ -56,7 +56,7 @@ https://templatemo.com/tm-559-zay-shop
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="log">
                 Zay 
             </a>
 
@@ -76,6 +76,15 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="nav-item">
                             <a class="nav-link" href="publication">Publication</a>
                         </li>
+
+                        <?php
+                            if($this->session->userdata("admin")==1)
+                            {
+                        echo "<li class='nav-item'>
+                        <a class='nav-link' href='admin'>ADMIN</a>
+                            </li>"; 
+                            }
+                        ?>
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
