@@ -67,8 +67,14 @@
         public function publication($id,$nom,$desc,$prix,$photo,$categorie)
             {
                 $sql = "insert into objet values(null,'".$id."','".$nom."','".$desc."','".$prix."','".$photo."','".$categorie."')";
-                    $this->db->query($sql);
+                $this->db->query($sql);
             }
+        public function stat_user()
+        {
+            $sql=" select count(idUser) as user from user where identification!=1";
+            $stat  = $this->db->query($sql);
+            return $stat->result();
+        }
          
     }
 ?>

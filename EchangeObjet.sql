@@ -71,6 +71,8 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+ select count(idUser) as user from user where identification!=1;
+
 -- --foreign key (idMarque) references marque(idMarque)
 -- select*from Objet  WHERE idUser = 2 GROUP BY nomObjet;
 -- select*from Objet  WHERE idUser = 3 GROUP BY nomObjet;
