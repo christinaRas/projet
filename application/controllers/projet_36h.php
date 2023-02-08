@@ -91,4 +91,8 @@ class projet_36h extends CI_Controller {
 	{
 		$this->load->view('recherche');
 	}
+	public function echange()
+	{
+		$this->load->view('echange');
+	}
 }
