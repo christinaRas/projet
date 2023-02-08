@@ -239,7 +239,7 @@ https://templatemo.com/tm-559-zay-shop
                                     <i class="text-muted fa fa-star"></i>
                                     <i class="text-muted fa fa-star"></i>
                                 </li>
-                                <button class="btn btn-warning-sm">DEMANDER</button>
+                                <button class="btn btn-warning" value="<?php echo $v->idObjet ;?>">DEMANDER</button>
                             </ul>
                             <p  class="h2 text-decoration-none text-dark"><?php echo $v->nomObjet; ?></p>
                             <p class="card-text">
