@@ -81,6 +81,12 @@
             $stat  = $this->db->query($sql);
             return $stat->result();
         }
+        public function photo($ido)
+        {
+            $sql="select * from objet where idObjet='".$ido."'";
+            $p  = $this->db->query($sql);
+            return $p->result();
+        }
          
     }
 ?>

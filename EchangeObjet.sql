@@ -149,5 +149,4 @@ select count(user)as n from nombre;
 update echange set idEtat = 2
 where idUser_echange = 2;
 
-update objet 
 

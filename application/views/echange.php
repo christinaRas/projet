@@ -81,11 +81,12 @@ $this->load->helper('url');
         </div>
     </nav>
 
+    <?php foreach($photo as $v): ?>
     <div class="p-2 pb-3">
 
                     <div class="product-wap card rounded-0">
                         <div class="card rounded-0">
-                            <img class="card-img rounded-0 img-fluid" src="assets/img/shop_11.jpg">
+                            <img class="card-img rounded-0 img-fluid" src="<?php echo base_url(); ?><?php echo $v->Photos ;?>">
                             <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                 <ul class="list-unstyled">
                                     <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -95,9 +96,9 @@ $this->load->helper('url');
                             </div>
                         </div>
                         <div class="card-body">
-                            <a href="shop-single.html" class="h3 text-decoration-none">Oupidatat non</a>
+                            <a href="shop-single.html" class="h3 text-decoration-none"><?php echo $v->nomObjet ;?></a>
                             <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                                <li>M/L/X/XL</li>
+                                <li><?php echo $v->descri ;?></li>
                                 <li class="pt-2">
                                     <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
                                     <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
@@ -115,7 +116,8 @@ $this->load->helper('url');
                                     <i class="text-muted fa fa-star"></i>
                                 </li>
                             </ul>
-                            <p class="text-center mb-0">$300.00</p>
+                            <p class="text-center mb-0"><?php echo $v->prix ;?></p>
                         </div>
                     </div>
                 </div>
+    <?php endforeach; ?>

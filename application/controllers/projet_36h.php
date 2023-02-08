@@ -93,6 +93,11 @@ class projet_36h extends CI_Controller {
 	}
 	public function echange()
 	{
-		$this->load->view('echange');
+		$ido = $this->input->post("objet");
+		$this->load->model('model_login');
+		$data['photo'] = $this->model_login->photo($ido);
+		$this->load->view('echange',$data);
 	}
+
+
 }
