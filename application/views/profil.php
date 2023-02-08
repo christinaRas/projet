@@ -86,6 +86,9 @@ https://templatemo.com/tm-559-zay-shop
                         <li class="nav-item">
                             <a class="nav-link" href="publication">Publication</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="count_user">Statistique</a>
+                        </li>
                         
                     </ul>
                 </div>

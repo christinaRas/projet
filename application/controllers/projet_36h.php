@@ -77,8 +77,13 @@ class projet_36h extends CI_Controller {
 		$nom = $this->input->post("nom");
 		$descri = $this->input->post("description");
 		$prix = $this->input->post("prix");
-		$image = $this->input->post("iamage");
-
-		
+		$image = $this->input->post("image");
+	}
+	public function count_user()
+	{
+		$id = $this->session->userdata('id');
+		$this->load->model('model_login');
+		$data['count'] = $this->model_login->stat_user();
+		$this->load->view('statistique',$data);
 	}
 }
