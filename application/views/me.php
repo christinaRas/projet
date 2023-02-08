@@ -74,7 +74,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="publication">Publication</a>
                         </li>
                     </ul>
                 </div>

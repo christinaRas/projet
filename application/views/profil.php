@@ -76,18 +76,14 @@ https://templatemo.com/tm-559-zay-shop
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="my_product">Mon profil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="publication">Publication</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                        
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
