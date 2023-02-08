@@ -21,6 +21,16 @@ insert into user values (null,'admin@a.admin','admin','admin',0,'assets/img/admi
 create or replace view membre as(select * from User where identification = 1);
 create or replace view adminn as(select * from User where identification = 0);
 
+create table categorie 
+(
+    idC integer primary key AUTO_INCREMENT,
+    nomC varchar(100)
+);
+insert into categorie values (null,"chaussures");
+insert into categorie values (null,"gant");
+insert into categorie values (null,"Technologie");
+
+
 create table Objet 
 (
     idObjet integer(30) primary key AUTO_INCREMENT,
@@ -29,14 +39,17 @@ create table Objet
     descri varchar(100),
     prix integer not null,
     Photos varchar(100),
-    categorie varchar(20),
+    categorie varchar(100) ,
     foreign key (idUser) references User(idUser)
+
 )engine=innodb;
 
-insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','30000','assets/img/c2.jpg','chaussure');
+
+   select nomC where idC = 1;
+
+insert into objet values(null,1,'Sandale','Bien confortable et a bas prix','30000','assets/img/c2.jpg',);
 insert into objet values(null,1,'Converse','A la mode et bien basique','60000','assets/img/c1.jpg','chaussure');
 insert into objet values(null,1,'Stan Smith','Pour toutes types de personnes','70000','assets/img/c3.jpg','chaussure');
-
 
 create view photosObjet as
 (

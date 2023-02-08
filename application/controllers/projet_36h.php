@@ -60,4 +60,9 @@ class projet_36h extends CI_Controller {
 		$data['resultat'] = $this->model_login->my_product($id);
 		$this->load->view('me',$data);
 	}
+	public function publication ()
+	{
+		$this->load->view("publication");
+
+	}
 }

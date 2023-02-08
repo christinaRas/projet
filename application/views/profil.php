@@ -83,7 +83,7 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="my_product">Mon profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.html">Shop</a>
+                            <a class="nav-link" href="publication">Publication</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
