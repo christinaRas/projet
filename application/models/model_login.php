@@ -68,5 +68,6 @@
                 $sql = "insert into objet values(null,'".$id."','".$nom."','".$desc."','".$prix."','".$photo."','".$categorie."')";
                     $this->db->query($sql);
             }
+        public function 
     }
 ?>
